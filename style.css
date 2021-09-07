@@ -1,0 +1,37 @@
+header {color: white;
+background-color: black;}
+
+footer {color: darkmagenta;}
+nav {color: darkcyan;}
+main {color: darkolivegreen;}
+
+body {background-color: rgb(248, 231, 156);
+font-family: 'Times New Roman', Times, serif;
+font-size: 100%;}
+
+h1 {
+  color: navy;
+  font-family: verdana;
+  font-size: 300%;
+}
+
+li {color: rgb(0, 73, 16)}
+
+p {
+  color: darkred;
+  font-family: cursive;
+  font-size: 125%;
+}
+
+ul li:nth-child(even){
+  background-color: rgb(119, 173, 255)
+}
+table{
+  font-size: 1.5em;
+  font-family: serif;
+  color: darkred;
+}
+
+li:nth-child(odd){
+  background-color: lightgray;
+}
