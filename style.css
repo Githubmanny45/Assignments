@@ -1,31 +1,61 @@
-header {color: white;
-background-color: black;}
-
-footer {color: darkmagenta;}
-nav {color: darkcyan;}
-main {color: darkolivegreen;}
-
-body {background-color: rgb(248, 231, 156);
-font-family: 'Times New Roman', Times, serif;
-font-size: 100%;}
+header {
+  color: white;
+  background-color: black;
+}
+footer {
+  color: darkmagenta;
+  }
+nav {
+  color: darkcyan;
+  }
+main {
+  color: darkolivegreen;
+  }
+  #table{
+    font-size: 12pt;
+  }
+  table, th, td {
+  border: 1px solid black;
+  padding: 0%;
+  margin: 0%;
+  table-layout: auto;
+}
+body {
+  background-color: rgb(248, 231, 156);
+  font-family: 'Times New Roman', Times, serif;font-size: 100%;
+  }
 
 h1 {
-  color: navy;
+  color: tomato;
   font-family: verdana;
-  font-size: 300%;
+  font-size: 100%;
 }
 
-li {color: rgb(0, 73, 16)}
+li {
+  color: rgb(0, 73, 16);
+  }
 
 p {
-  color: darkred;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 100%;
+}
+#labelp{
+  color: darkblue;
   font-family: cursive;
-  font-size: 125%;
+  font-size: 100%;
+}
+#title, #resetTitle, #submitTitle{
+  color: darkblue;
+  font-family: cursive;
+  font-size: 100%;
+  font-weight: bold;
 }
 
 ul li:nth-child(even){
   background-color: rgb(119, 173, 255)
 }
+
 table{
   font-size: 1.5em;
   font-family: serif;
@@ -34,4 +64,64 @@ table{
 
 li:nth-child(odd){
   background-color: lightgray;
+}
+
+.banner {
+    /* The image used */
+    background-image:url(Images/welcome.jpg);
+    height: 100px;
+  }
+
+/* On screens that are 500px wide or less, make two columns and background color alice blue */
+@media screen and (max-width: 500px) {
+  body {
+    background-color: aliceblue;
+  }
+  div.wrapper{
+    grid-template-columns: auto auto;
+    font-size: 12pt;
+  }
+  div.right{
+  text-align: right;
+  float:right;
+  grid-column: 2/3;
+}
+}
+
+/* On screens that are 300px wide or less, make the columns stack on top of each other instead of next to each other and background color olive*/
+@media screen and (max-width: 300px) {
+  body {
+    background-color: olive;
+  }
+  div.wrapper{
+    grid-template-columns: auto;
+  }
+  div.right{
+  text-align: right;
+  float:right;
+  grid-column: 1/2;
+}
+}
+.right{
+  text-align: right;
+  float:right;
+  grid-column: 3/4;
+}
+.left{
+  text-align: left;
+  float:left;
+  grid-column: 1/2;
+}
+.center{
+  text-align: center;
+  float:center;
+  grid-column: 2/3;
+}
+.wrapper{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 3%;
+  margin: 0%;
+  padding: 0%;
+  font-size: 12pt;
 }

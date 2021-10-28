@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Assignments </title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header> Header </header>
+    <div class = "column">
+    <h1>Assignments</h1>
+    <h2>Developed by Emmanuel Vanderson</h2>
+    <div class="banner">
+      <h1>WELCOME!</h1>
+    </div>
+    
+    <form id = "myForm" method = "POST" onsubmit = " return validateForm()">
+      <main class = "mainwrapper" id = "mainwrapper" onmousemove="mouseIn(event)" onmouseout="mouseOut(event)" id = "labelp">
+        <legend id = "title"> Personal Info </legend>
+
+        <label for = "lastName"> Last Name: </label>
+        <input id = "inputtedText" name = "lastName" type="text" required = "required" size = 25 maxlength = 50></input></br>
+
+        <label for = "firstName"> First Name: </label>
+        <input id = "inputtedText" name = "firstName" type="text" required = "required" size = 25 maxlength = 50></input></br>
+
+        <label for = "myEmail"> E-mail: </label>
+        <input id = "inputtedText" name = "myEmail" type="email" required = "required" size = 40></input></br>
+
+        <label for = "userName"> Username: </label>
+        <input  id = "inputtedText" type="text" placeholder="Enter Username" name="userName" required = "required" size = 20></input></br>
+
+        <label for = "passWord"> Password: </label>
+        <input  class = "passWords" id = "passWord" type="password" placeholder="Enter Password" name="passWord" required = "required" maxlength = 25></input></br>
+        
+        <label for = "passWord"> Re-Enter Password: </label>
+        <input  class = "passWords" id = "reEnter" type="password" placeholder="Re-enter Password" name="reEnter" required = "required" maxlength = 25></input></br>
+
+        <label for = "phoneNum"> Phone Number: </label>
+        <input  id = "inputtedText" type="tel" placeholder="###-###-####" name="reEnter" required = "required" pattern= "[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Ten Digit Phone Number"></input></br></br>
+
+          <label for = "comments" id = "title"> Comments: </label>
+          <textarea id="inputtedText" name="w3review" rows="4" cols="50">
+          </textarea>
+          </br>
+
+          <input id = "submitTitle" type="submit" value="Submit"></input>
+          </br>
+          <button id = "resetTitle" type = "reset" onclick = "resetPage()" >RESET</button>
+          
+      </main>
+      </form>
+    </div>
+    <nav>
+      <p id = "title">GO TO</p>
+      <a href="index.html">MAIN</a> |
+      <a href="page1.html">Page 1</a> |
+      <a href="page2.html">Page 2</a> |
+      <a href="https://www.columbusstate.edu">CSU Main Page</a> 
+      </nav> </br>
+    <main></main> </br>
+    <footer>CONTACT INFO: </br>
+    Emmanuel Vanderson </br>
+    (123)456-7890 </br>
+    vanderson_emmanuel@columbusstate.edu </br>
+    </footer>
+    </br>
+
+    <<script src="script.js"></script>
+  </body>
+</html>
